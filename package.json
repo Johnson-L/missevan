@@ -25,6 +25,7 @@
     "test": "react-app-rewired test",
     "eject": "rreact-app-rewired eject"
   },
+  "proxy": "https://www.missevan.com",
   "eslintConfig": {
     "extends": "react-app"
   },

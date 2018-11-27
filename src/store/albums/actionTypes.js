@@ -1,0 +1,4 @@
+
+export const GET_ALBUMS_INFO="GET_ALBUMS_INFO";
+export const GET_ALBUMS_SOUND="GET_ALBUMS_SOUND";
+export const GET_TYPE_ID="GET_TYPE_ID"
