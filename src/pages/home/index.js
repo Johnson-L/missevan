@@ -12,7 +12,6 @@ class AppHomeContainer extends Component {
         }
     }
     render() {
-        console.log(this.props.match.path);
         return (
             <AppHomeWrapper>
                 <AppHomeNav className="light">

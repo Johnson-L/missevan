@@ -51,6 +51,7 @@ _connect.addActions = function (actionCreator)  {
 }
 
 function filterObject (obj, arr) {
+    
     if ( !arr || arr.length <= 0 ) return obj;
     let result = {}
     arr.forEach(key => {
