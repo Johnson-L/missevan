@@ -2,8 +2,12 @@ import React, { Component, Fragment } from 'react';
 import { Route, withRouter, Link, NavLink, Switch, Redirect } from 'react-router-dom';
 import { AppContainerWrapper } from './styled-components';
 import AppHomeContainer from '@pages/home';
+import CafalogsLittle from '@pages/cafalogs-detail';
+import Drama from '@pages/drama';
 import AppNotFound from '@pages/not-found';
-
+import AppRank from '@pages/rank';
+import AppChannels from '@pages/channels';
+import AppChannel from '@pages/channel';
 class AppContainer extends Component {
 
     render () {
@@ -17,12 +21,40 @@ class AppContainer extends Component {
                             () => <Redirect to="/home"/>
                         }
                        
-
-                    
                     />
                     <Route
                         path = '/home'
                         component={AppHomeContainer}
+                    />
+                    <Route
+                        path = '/cafalogs-detail/:id'
+                        component = {CafalogsLittle}
+                    />
+
+                    <Route
+                        path = '/drama'
+                        component = {Drama}
+                    />
+
+                    <Route
+                        path = '/rank'
+                        component = { AppRank }
+                    />   
+
+                    
+                    <Route
+                        path = '/channels'
+                        component = { AppChannels }
+                    />
+
+                    <Route 
+                        path = '/channel/:cid/:type'
+                        component = { AppChannel }
+                    />
+
+                    <Route 
+                        path = '/channel/:cid'
+                        component = { AppChannel }
                     />
 
                     <Route path="/not-found" render={() => <AppNotFound />} />

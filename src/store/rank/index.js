@@ -21,8 +21,6 @@ const reducer = (
 
             new_state.list = action.payload.data.data; break;
 
-        
-
         default:return previous_state;
     }
     return new_state

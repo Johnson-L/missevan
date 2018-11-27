@@ -18,7 +18,6 @@ class AppHomeContainer extends Component {
             var id=getAlbumsParams.params.id;
         }
         id= id ? id : "0";
-        console.log(id)
         return (
             <AppHomeWrapper>
                 <AppHomeNav className="light">
@@ -47,6 +46,9 @@ class AppHomeContainer extends Component {
                     
 
                 </AppHomeContent>
+                
+                
+
             </AppHomeWrapper>
         )
     }
