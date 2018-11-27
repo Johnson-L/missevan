@@ -1,0 +1,7 @@
+
+export const GETCHANGE_ID = 'GETCHANGE_ID'
+
+export const GET_CATALOGS_ITEM = 'GET_CATALOGS_ITEM'
+
+export const GET_CAFALOGS_SON = 'GET_CAFALOGS_SON'
+

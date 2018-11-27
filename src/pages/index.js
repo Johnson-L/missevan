@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { Route, withRouter, Link, NavLink, Switch, Redirect } from 'react-router-dom';
 import { AppContainerWrapper } from './styled-components';
 import AppHomeContainer from '@pages/home';
+import CafalogsLittle from '@pages/cafalogs-detail';
+import Drama from '@pages/drama';
 import AppNotFound from '@pages/not-found';
 
 class AppContainer extends Component {
@@ -23,6 +25,15 @@ class AppContainer extends Component {
                     <Route
                         path = '/home'
                         component={AppHomeContainer}
+                    />
+                    <Route
+                        path = '/cafalogs-detail/:id'
+                        component = {CafalogsLittle}
+                    />
+
+                    <Route
+                        path = '/drama'
+                        component = {Drama}
                     />
 
                     <Route path="/not-found" render={() => <AppNotFound />} />
