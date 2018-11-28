@@ -10,6 +10,7 @@ import connect from "@connect"
 connect.addActions({
     albums: createactions
 })
+
 class AppAlbums extends Component {
     constructor(props){
         super(props)
@@ -20,6 +21,7 @@ class AppAlbums extends Component {
         this.unShowMask=this.unShowMask.bind(this)
 
     }
+    
     showMask(){
         this.setState({isShow:true})
     }
@@ -34,6 +36,7 @@ class AppAlbums extends Component {
                 <AlbumsContent>
                     <AlbumsTitle show={this.showMask} {...this.props}/>
                     <AlbumsItems />
+                    {/* <AlbumsMore /> */}
                 </AlbumsContent>
             </AlbumsWrapper>
         )

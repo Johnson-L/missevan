@@ -2,7 +2,10 @@
 export default {
    albumsInfo:{},
    albumsSound:{
-      data:""
+      data:{
+         albums:[],
+         pagination:{}
+      }
    },
    typeid:0
 }

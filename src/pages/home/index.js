@@ -41,10 +41,6 @@ class AppHomeContainer extends Component {
                         } />
                         <Redirect to="/not-found" />
                     </Switch>
-
-
-                    
-
                 </AppHomeContent>
                 
                 

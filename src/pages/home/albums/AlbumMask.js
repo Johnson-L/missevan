@@ -1,13 +1,14 @@
 
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { AlbumMask, MaskTitle, MaskRows, MaskType, MaskItem } from "./styledComponent"
 import connect from "@connect"
 import uuid from "uuid"
 import {withRouter} from "react-router-dom"
 
-class Albummask extends Component {
+class Albummask extends PureComponent {
     componentDidMount() {
         this.props.albums_actions.getListInfo();
+        // this.props.albums_actions.getTypeId(this.props.match.params.id);
     }
     state={
         props_state:this.props.location.state ? this.props.location.state : "全部音单"
@@ -62,6 +63,8 @@ class Albummask extends Component {
         this.props.history.push({pathname:"/home/albums/"+path,state:val});
         this.props.unshow();
         this.props.albums_actions.getTypeId(path);
+        this.props.albums_actions.getListSound(path,1);
+
     }
 
 }

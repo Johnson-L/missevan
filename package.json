@@ -6,6 +6,7 @@
     "antd-mobile": "^2.2.6",
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
+    "better-scroll": "^1.13.2",
     "lodash": "^4.17.11",
     "react": "^16.6.3",
     "react-app-rewired": "^1.6.2",
@@ -34,8 +35,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
- 
-
-  "proxy" : "https://www.missevan.com" 
+  ]
 }

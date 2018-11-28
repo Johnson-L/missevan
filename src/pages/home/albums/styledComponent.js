@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const AlbumsWrapper=styled.div`
     position:relative;
-    /* overflow:hidden; */
+    /* height:calc(100vh - 150px);
+    overflow:hidden; */
 `
 export const AlbumsContent= styled.div`
     width:100%;
@@ -151,7 +152,15 @@ export const ItemCoverSound=styled.div`
         }
     }
 `
-
+export const ItemCoverMore=styled.div`
+    width: 80%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: #e0e0e0;
+    font-size: 14px;
+    text-align:center;
+    line-height:30px;
+`
 export const AlbumMask = styled.div`
     position:absolute;
     height: calc(100% + 1.06667rem);

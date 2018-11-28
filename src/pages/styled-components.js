@@ -4,8 +4,9 @@ export const AppContainerWrapper =  styled.div`
     display: block;
     padding-top: 40px;
     min-height: calc(100vh - 70px);
+    /* height:100vh; */
     max-width: 100vw;
-    overflow-x:hidden
+    overflow-x:hidden;
     >div{
         display: block;
         position: relative;

@@ -9,11 +9,13 @@ const reducer=(preState=defaultState,action)=>{
             break;
 
         case types.GET_ALBUMS_SOUND+"_FULFILLED":
-            new_state.albumsSound.data=action.payload.data;
+                new_state.albumsSound.data.albums=action.payload.data.albums;
+                new_state.albumsSound.data.pagination=action.payload.data.pagination;
             break;
         
         case types.GET_TYPE_ID :
             new_state.typeid=action.value;
+
             break;
     }
     return new_state;
