@@ -9,6 +9,8 @@ class RecommendBody extends Component {
         return (
             <BodyWrapper className={this.props.info.cata === 'channel' ? 'channel' : ''}>
                 {this.renderList()}
+
+                
             </BodyWrapper >
         )
     }
